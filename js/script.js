@@ -4,6 +4,8 @@ let btn_next = document.querySelector('.next') // Pegando o btn next
 
 
 // Pegando o tamanho ou quantidade dos itens
+// count
+// 0, 1, 3
 let count_item = list.length
 
 // Item que esta activo
@@ -15,10 +17,14 @@ btn_next.addEventListener('click',()=>{
     let activeOld = document.querySelector('.active')
     activeOld.classList.remove('active')
 
-    item_active = item_active >= count_item -1 ? 0 : item_active + 1
+    //Forma não dinamica de mudar o valor
+    //item_active = item_active + 1 -> cada click no botao o valor do item_active vai mudar
+    item_active = item_active >= count_item -1 ? 0 : item_active + 1 //forma dinamica
+    console.log(item_active)
     /* ADICIONANDO A CLASS ACTIVE NO PROXIMO ITEM*/
     list[item_active].classList.add('active')
 })
+
 
 //Adiconando click no btn prev, botao a esquerda
 btn_prev.addEventListener('click', ()=>{
@@ -26,7 +32,7 @@ btn_prev.addEventListener('click', ()=>{
     activeOld.classList.remove('active')
 
 
-    item_active = item_active <= 0 ? count_item -1  : item_active - 1
+    item_active = item_active <= 0 ? count_item - 1  : item_active - 1
     /* ADICIONANDO A CLASS ACTIVE NO PROXIMO ITEM*/
     list[item_active].classList.add('active')
 
