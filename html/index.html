@@ -6,26 +6,30 @@
     <meta name="author" content="Francisco Macedo">
     <meta name="description" content="Site de venda de refrigerante e sumos naturais">
     <link rel="stylesheet" href="../css/style.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
     <title>Lumi Refri</title>
 </head>
 <body>
     <main>
         <!-- REFRIGERANTE DE MORANGO -->
-        <div class="item active">
+        <div class="item active" style="--background: #EA3D41;">
             <div class="bebida_title">Morango</div>
             <img src="../img/Morango-refrigerante-foregroundBlur.png" alt="Foto do morango" class="bg_fruit">
             <img src="../img/Morango-refrigerante.png" alt="Lata do refrigerante de morango" class="bebida_lata">
         </div>
 
         <!-- REFRIGERANTE DE ABACATE -->
-        <div class="item">
+        <div class="item " style="--background: #2D5643;">
             <div class="bebida_title">Abacate</div>
             <img src="../img/Abacate-refrigerante-foregroundBlur.png" alt="Foto do abacate" class="bg_fruit">
             <img src="../img/Abacate-refrigerante.png" alt="Lata do refrigerante de abacate" class="bebida_lata">
         </div>
 
         <!-- REFRIGERANTE DE LARANJA -->
-        <div class="item hidden">
+        <div class="item hidden " style="--background: #E7A043;">
             <div class="bebida_title">Laranja</div>
             <img src="../img/Laranja-refrigerante-foregroundBlur.png" alt="Foto da laranja" class="bg_fruit">
             <img src="../img/Laranja-refrigerante.png" alt="Lata do refrigerante de laranja" class="bebida_lata">
@@ -33,11 +37,21 @@
 
         <!-- ARROWS  -->
          <div class="arrow">
-            <button type="button" class="btn"></button>
-            <button type="button" class="btn"></button>
+
+            <!-- SETA ESQUERDA -->
+            <button type="button" class="prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </button>
+
+            <!-- SETA DIREITA -->
+            <button type="button" class="next">
+                <i class="ri-arrow-right-s-line"></i>
+            </button>
 
          </div>
     </main>
+
+    <script ></script>
     
 </body>
 </html>
