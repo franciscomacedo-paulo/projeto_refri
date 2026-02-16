@@ -81,3 +81,20 @@
 .arrow > *:hover{
     background-color: #eeeeee12;
 }
+
+/* ADICONANDO ANIMAÇAO AO ITENS */
+@keyframes toActive{
+    from{
+        top: 100%;
+        opacity: 0;
+    }
+
+}
+/* ANIMANDO A IMAGEM */
+ .item.active img.bg_fruit{
+    animation: toActive 0.5s ease-in-out;
+ }
+ /* ANIMANDO O TITULO */
+ .item.active  .bebida_title{
+    animation: toActive 0.5s ease-in-out;
+ }
